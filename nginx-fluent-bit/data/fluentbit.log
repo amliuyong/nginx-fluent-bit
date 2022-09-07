@@ -1,0 +1,61 @@
+[2022/09/07 04:29:27] [ info] [fluent bit] version=1.9.3, commit=eb4e2e770f, pid=1
+[2022/09/07 04:29:27] [ info] [storage] version=1.2.0, type=memory-only, sync=normal, checksum=disabled, max_chunks_up=128
+[2022/09/07 04:29:27] [ info] [cmetrics] version=0.3.1
+[2022/09/07 04:29:27] [ info] [http_server] listen iface=127.0.0.1 tcp_port=2020
+[2022/09/07 04:29:27] [ info] [sp] stream processor started
+[2022/09/07 04:32:51] [ warn] [engine] service will shutdown in max 5 seconds
+[2022/09/07 04:32:51] [ info] [engine] service has stopped (0 pending tasks)
+[2022/09/07 04:33:53] [ info] [fluent bit] version=1.9.3, commit=eb4e2e770f, pid=1
+[2022/09/07 04:33:53] [ info] [storage] version=1.2.0, type=memory-only, sync=normal, checksum=disabled, max_chunks_up=128
+[2022/09/07 04:33:53] [ info] [cmetrics] version=0.3.1
+[2022/09/07 04:33:53] [ info] [http_server] listen iface=127.0.0.1 tcp_port=2020
+[2022/09/07 04:33:53] [ info] [sp] stream processor started
+[2022/09/07 04:35:55] [ info] [input:tail:tail.0] inotify_fs_add(): inode=46690799 watch_fd=1 name=/var/log/nginx/postdata.log
+[2022/09/07 04:42:05] [ warn] [engine] service will shutdown in max 5 seconds
+[2022/09/07 04:42:06] [ info] [engine] service has stopped (0 pending tasks)
+[2022/09/07 04:42:06] [ info] [input:tail:tail.0] inotify_fs_remove(): inode=46690799 watch_fd=1
+[2022/09/07 04:42:13] [ info] [fluent bit] version=1.9.3, commit=eb4e2e770f, pid=1
+[2022/09/07 04:42:13] [ info] [storage] version=1.2.0, type=memory-only, sync=normal, checksum=disabled, max_chunks_up=128
+[2022/09/07 04:42:13] [ info] [cmetrics] version=0.3.1
+[2022/09/07 04:42:13] [ info] [http_server] listen iface=127.0.0.1 tcp_port=2020
+[2022/09/07 04:42:13] [ info] [sp] stream processor started
+[2022/09/07 04:42:13] [ info] [input:tail:tail.0] inotify_fs_add(): inode=46690799 watch_fd=1 name=/var/log/nginx/postdata.log
+[2022/09/07 04:49:46] [ warn] [engine] service will shutdown in max 5 seconds
+[2022/09/07 04:49:47] [ info] [engine] service has stopped (0 pending tasks)
+[2022/09/07 04:49:47] [ info] [input:tail:tail.0] inotify_fs_remove(): inode=46690799 watch_fd=1
+[2022/09/07 04:51:13] [ info] [fluent bit] version=1.9.3, commit=eb4e2e770f, pid=1
+[2022/09/07 04:51:13] [ info] [storage] version=1.2.0, type=memory-only, sync=normal, checksum=disabled, max_chunks_up=128
+[2022/09/07 04:51:13] [ info] [cmetrics] version=0.3.1
+[2022/09/07 04:51:13] [ info] [http_server] listen iface=127.0.0.1 tcp_port=2020
+[2022/09/07 04:51:13] [ info] [sp] stream processor started
+[2022/09/07 04:51:13] [ info] [input:tail:tail.0] inotify_fs_add(): inode=46690799 watch_fd=1 name=/var/log/nginx/postdata.log
+[2022/09/07 04:55:02] [ warn] [engine] service will shutdown in max 5 seconds
+[2022/09/07 04:55:02] [ info] [engine] service has stopped (0 pending tasks)
+[2022/09/07 04:55:02] [ info] [input:tail:tail.0] inotify_fs_remove(): inode=46690799 watch_fd=1
+[2022/09/07 04:55:17] [ info] [fluent bit] version=1.9.3, commit=eb4e2e770f, pid=1
+[2022/09/07 04:55:17] [ info] [storage] version=1.2.0, type=memory-only, sync=normal, checksum=disabled, max_chunks_up=128
+[2022/09/07 04:55:17] [ info] [cmetrics] version=0.3.1
+[2022/09/07 04:55:17] [ info] [http_server] listen iface=127.0.0.1 tcp_port=2020
+[2022/09/07 04:55:17] [ info] [sp] stream processor started
+[2022/09/07 04:55:17] [ info] [input:tail:tail.0] inotify_fs_add(): inode=46690799 watch_fd=1 name=/var/log/nginx/postdata.log
+[2022/09/07 05:26:51] [ warn] [engine] service will shutdown in max 5 seconds
+[2022/09/07 05:26:52] [ info] [engine] service has stopped (0 pending tasks)
+[2022/09/07 05:26:52] [ info] [input:tail:tail.0] inotify_fs_remove(): inode=46690799 watch_fd=1
+[2022/09/07 05:27:21] [ info] [fluent bit] version=1.9.3, commit=eb4e2e770f, pid=1
+[2022/09/07 05:27:21] [ info] [storage] version=1.2.0, type=memory-only, sync=normal, checksum=disabled, max_chunks_up=128
+[2022/09/07 05:27:21] [ info] [cmetrics] version=0.3.1
+[2022/09/07 05:27:21] [ info] [http_server] listen iface=127.0.0.1 tcp_port=2020
+[2022/09/07 05:27:21] [ info] [sp] stream processor started
+[2022/09/07 05:27:21] [ info] [input:tail:tail.0] inotify_fs_add(): inode=46690799 watch_fd=1 name=/var/log/nginx/postdata.log
+[2022/09/07 05:27:29] [ warn] [engine] service will shutdown in max 5 seconds
+[2022/09/07 05:27:30] [ info] [engine] service has stopped (0 pending tasks)
+[2022/09/07 05:27:30] [ info] [input:tail:tail.0] inotify_fs_remove(): inode=46690799 watch_fd=1
+[2022/09/07 05:28:10] [ info] [fluent bit] version=1.9.3, commit=eb4e2e770f, pid=1
+[2022/09/07 05:28:10] [ info] [storage] version=1.2.0, type=memory-only, sync=normal, checksum=disabled, max_chunks_up=128
+[2022/09/07 05:28:10] [ info] [cmetrics] version=0.3.1
+[2022/09/07 05:28:10] [ info] [http_server] listen iface=127.0.0.1 tcp_port=2020
+[2022/09/07 05:28:10] [ info] [sp] stream processor started
+[2022/09/07 05:28:10] [ info] [input:tail:tail.0] inotify_fs_add(): inode=46690799 watch_fd=1 name=/var/log/nginx/postdata.log
+[2022/09/07 05:39:25] [ warn] [engine] service will shutdown in max 5 seconds
+[2022/09/07 05:39:25] [ info] [engine] service has stopped (0 pending tasks)
+[2022/09/07 05:39:25] [ info] [input:tail:tail.0] inotify_fs_remove(): inode=46690799 watch_fd=1

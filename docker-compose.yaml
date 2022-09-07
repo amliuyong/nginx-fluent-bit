@@ -1,0 +1,36 @@
+version: '3.1'
+
+services:
+  fluent-bit-svc:
+    image: my-fluent-bit
+    build: ./fluent-bit
+    restart: always
+    ports:
+      - 2020:2020
+    # healthcheck:
+    #   test: ["CMD", "curl", "-f", "http://localhost:2020"]
+    #   interval: 1m
+    #   timeout: 10s
+    #   retries: 3
+    #   start_period: 30s
+    volumes:
+      - nginx-logs:/var/log/nginx/
+      - fluent-bit-logs:/var/log/fluentbit/
+  nginx-svc:
+    image: my-nginx
+    build: ./nginx
+    restart: always
+    ports:
+      - 8088:8088
+    depends_on:
+      - fluent-bit-svc
+    volumes:
+      - nginx-logs:/var/log/nginx
+
+
+volumes:
+  nginx-logs:
+  fluent-bit-logs:
+
+networks:
+  mynet:
