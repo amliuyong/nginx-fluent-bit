@@ -1,5 +1,7 @@
 FROM  nginx:latest
 
+ENV AWS_INSTANCE_ID=MyHost
+
 RUN apt-get update -y
 RUN apt-get upgrade -y
 

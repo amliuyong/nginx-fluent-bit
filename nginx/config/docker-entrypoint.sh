@@ -35,6 +35,9 @@ if [ "$1" = "nginx" -o "$1" = "nginx-debug" ]; then
     fi
 fi
 
+sed -i "s/AWS_INSTANCE_ID/$AWS_INSTANCE_ID/g;"  /etc/logrotate.d/nginx
+sed -i "s/AWS_INSTANCE_ID/$AWS_INSTANCE_ID/g;"  /etc/nginx/nginx.conf
+
 /usr/sbin/cron
  
 exec "$@"
