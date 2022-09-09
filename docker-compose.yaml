@@ -7,12 +7,6 @@ services:
     restart: always
     ports:
       - 2020:2020
-    # healthcheck:
-    #   test: ["CMD", "curl", "-f", "http://localhost:2020"]
-    #   interval: 1m
-    #   timeout: 10s
-    #   retries: 3
-    #   start_period: 30s
     volumes:
       - nginx-logs:/var/log/nginx/
       - fluent-bit-logs:/var/log/fluentbit/
@@ -31,6 +25,3 @@ services:
 volumes:
   nginx-logs:
   fluent-bit-logs:
-
-networks:
-  mynet:
