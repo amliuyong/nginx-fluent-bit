@@ -1,4 +1,4 @@
-docker build -t my-nginx-fluent-bit .
+docker build -t my-fluent-bit .
 
 dir_name=`pwd`
 
@@ -24,4 +24,4 @@ docker run -d  \
 -e AWS_S3_BUCKET=nginx-fluent-bit-ap-southeast-1 \
 -v $dir_name/data/fluentbit:/var/log/fluentbit \
 -v $dir_name/data/nginx:/var/log/nginx \
- my-nginx-fluent-bit
+my-fluent-bit
