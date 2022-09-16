@@ -1,0 +1,28 @@
+data_dir = "/var/lib/vector"
+
+[api]
+enabled = false
+address = "0.0.0.0:8686"
+
+[sources.nginx_logs]
+type         = "file"
+include      = ["/var/log/nginx/%%INPUT_FILE%%.log"]
+ignore_older = 86400        
+
+[transforms.json_parser]
+inputs = ["apache_logs"]
+type   = "remap"
+source = '''
+. = parse_json(.message)
+'''
+
+[sinks.s3_archives]
+inputs          = ["json_parser"]    
+type            = "aws_s3"
+region          = "%%AWS_REGION%%"
+bucket          = "%%AWS_S3_BUCKET%%"
+key_prefix      = "vector-data/%Y-%m-%d"      # daily partitions, hive friendly format
+compression     = "gzip"               # compress final objects
+framing.method  = "newline_delimited"  # new line delimited...
+encoding.codec  = "json"               # ...JSON
+batch.max_bytes = 10000000             # 10mb uncompressed
