@@ -1,0 +1,28 @@
+version: '3.1'
+
+services:
+  vector-svc:
+    image: aws-data-ingection-vector
+    build: ./vector
+    restart: always
+    network_mode: host
+    environment:
+      AWS_INSTANCE_ID: ${AWS_INSTANCE_ID}
+      AWS_REGION: ${AWS_REGION}
+      AWS_S3_BUCKET: ${AWS_S3_BUCKET}
+      AWS_S3_PEFIX: ${AWS_S3_PEFIX}
+    volumes:
+      - /efs/data/nginx:/var/log/nginx/
+      - /efs/data/vector:/var/lib/vector/
+  nginx-svc:
+    image: aws-data-ingection-nginx
+    build: ./nginx
+    restart: always
+    network_mode: host
+    environment:
+       AWS_INSTANCE_ID: ${AWS_INSTANCE_ID}
+    depends_on:
+      - vector-svc
+    volumes:
+      - /efs/data/nginx:/var/log/nginx
+

@@ -34,5 +34,10 @@ if [ "$1" = "nginx" -o "$1" = "nginx-debug" ]; then
         echo >&3 "$0: No files found in /docker-entrypoint.d/, skipping configuration"
     fi
 fi
+
+sed -i "s/%%AWS_INSTANCE_ID%%/$AWS_INSTANCE_ID/g;"  /etc/logrotate.d/nginx
+sed -i "s/%%AWS_INSTANCE_ID%%/$AWS_INSTANCE_ID/g;"  /etc/nginx/nginx.conf
+
+/usr/sbin/cron
  
 exec "$@"
